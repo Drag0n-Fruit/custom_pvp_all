@@ -353,7 +353,7 @@ const CHARACTERS = [
       description: "인간으로 변신한다<br>일시적으로 이동 속도가 증가하며 스킬 쿨타임이 초기화된다"
       }],
     passive: {
-      name: "야수의 본능", description: "야수 상태일 때, 실명이 상시 유지된다"
+      name: "야수의 본능", description: "야수 상태일 때, 실명이 상시 유지되며, 출혈이 부여된 모든 적에게 발광을 부여한다"
     }
   },
   {
@@ -519,8 +519,8 @@ const CHARACTERS = [
       description: "해부용 단검"
     },
     skills: [
-      { name: "중독 플라스크", cooldown: "⌛10s", description: "전방에 적에게 중독을 부여하고 아군을 회복하는 물약을 던진다" },
-      { name: "환영의 비약", cooldown: "⌛25s", description: "주변 아군에게 은신과 성급함을 부여한다" }
+      { name: "중독 플라스크", cooldown: "⌛8s", description: "전방에 적에게 중독을 부여하고 아군을 회복하는 물약을 던진다" },
+      { name: "부식 가스", cooldown: "⌛25s", description: "전방에 적에게 피로와 취약을 부여하는 장판을 설치하는 물약을 던진다" }
     ],
     ultimate: {
       name: "현자의 돌",
@@ -547,7 +547,7 @@ const CHARACTERS = [
     }, {
         name: "응애",
         type: "범위 공격(차지형)",
-        description: "아기의 울음은 피아식별이 안된다"
+        description: "피아식별이 되겠냐고요"
       }],
     skills: [
       { name: "애교", cooldown: "⌛12s", description: "전방의 적을 기절시킨다" },
@@ -557,7 +557,7 @@ const CHARACTERS = [
     ultimate: {
       name: "어부바",
       gauge: "🔋1000p",
-      description: "가장 가까운 아군에게 어부바를 한다.<br>지속적으로 어부바한 아군을 치유하고, 기본 무기가 차지형 광역 무기로 변경된다"
+      description: "전방으로 도약하며, 접촉한 플레이어한테 어부바를 한다<br>아군을 어부바할 경우, 지속적으로 아군을 치유하고, 기본 무기가 변경된다<br>적군을 어부바할 경우, 적에게 피해와 기절을 준다"
     },
     passive: null
   },
